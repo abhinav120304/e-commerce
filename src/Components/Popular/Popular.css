@@ -1,0 +1,77 @@
+.popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: auto; /* Adjust height for flexibility */
+    padding: 20px; /* Added padding for better spacing */
+    margin: 0 auto; /* Center the section horizontally */
+}
+
+.popular h1 {
+    color: #171717;
+    font-size: 32px; /* Reduced font size for smaller screens */
+    font-weight: 600;
+    text-align: center; /* Center text for better appearance */
+}
+
+.popular hr {
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+}
+
+.popular-item {
+    margin-top: 30px; /* Reduced margin for smaller screens */
+    display: flex;
+    gap: 10px; /* Reduced gap for smaller screens */
+    flex-wrap: wrap; /* Ensure items wrap if they exceed container width */
+    justify-content: center; /* Center items horizontally */
+}
+
+.popular-item img {
+    max-width: 100%; /* Make sure images do not exceed their container's width */
+    max-height: 200px; /* Reduced max height for smaller screens */
+    object-fit: cover; /* Ensure images maintain their aspect ratio */
+    border-radius: 10px; /* Optional: Adds rounded corners to images */
+}
+
+/* Media queries for larger screens */
+@media (min-width: 768px) {
+    .popular {
+        padding: 40px; /* Adjusted padding for tablets */
+    }
+
+    .popular h1 {
+        font-size: 40px; /* Adjusted font size for tablets */
+    }
+
+    .popular-item {
+        gap: 20px; /* Adjusted gap for tablets */
+        margin-top: 40px; /* Adjusted margin for tablets */
+    }
+
+    .popular-item img {
+        max-height: 250px; /* Adjusted max height for tablets */
+    }
+}
+
+@media (min-width: 1024px) {
+    .popular {
+        height: 90vh; /* Restore original height for larger screens */
+    }
+
+    .popular h1 {
+        font-size: 50px; /* Restore original font size for larger screens */
+    }
+
+    .popular-item {
+        gap: 30px; /* Restore original gap for larger screens */
+        margin-top: 50px; /* Restore original margin for larger screens */
+    }
+
+    .popular-item img {
+        max-height: 300px; /* Restore original max height for larger screens */
+    }
+}

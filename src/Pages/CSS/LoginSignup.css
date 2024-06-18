@@ -1,0 +1,140 @@
+.loginsignup {
+    width: 100%;
+    height: auto; /* Changed from fixed height to auto for better responsiveness */
+    background: #fce3fe;
+    padding-top: 100px;
+    padding-bottom: 50px; /* Added padding to ensure content is not too close to the bottom on smaller screens */
+    box-sizing: border-box;
+}
+
+.loginsignup-container {
+    width: 100%;
+    max-width: 580px; /* Limit maximum width for larger screens */
+    height: auto; /* Changed from fixed height to auto */
+    background: white;
+    margin: auto;
+    padding: 40px 20px; /* Adjust padding for better responsiveness */
+    box-sizing: border-box;
+}
+
+.loginsignup-container h1 {
+    margin: 20px 0px;
+    font-size: 2rem; /* Adjust font size for better readability on smaller screens */
+}
+
+.loginsignup-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Reduced gap for better spacing on smaller screens */
+    margin-top: 30px;
+}
+
+.loginsignup-fields input {
+    height: 50px; /* Reduced height for better fit on smaller screens */
+    width: 100%;
+    padding-left: 20px;
+    border: 1px solid #c9c9c9;
+    outline: none;
+    color: #5c5c5c;
+    font-size: 16px; /* Reduced font size for better fit on smaller screens */
+}
+
+.loginsignup-container button {
+    width: 100%;
+    max-width: 580px; /* Ensure button does not exceed container width */
+    height: 60px; /* Reduced height for better fit on smaller screens */
+    color: white;
+    background: #ff4141;
+    margin-top: 30px;
+    border: none;
+    font-size: 20px; /* Reduced font size for better fit on smaller screens */
+    cursor: pointer;
+}
+
+.loginsignup-login {
+    margin-top: 20px;
+    color: #5c5c5c;
+    font-size: 16px; /* Reduced font size for better readability on smaller screens */
+    font-weight: 500;
+    text-align: center; /* Centered text for better appearance */
+}
+
+.loginsignup-login span {
+    color: #ff4141;
+    font-weight: 600;
+}
+
+.loginsignup-agree {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    gap: 10px; /* Reduced gap for better fit on smaller screens */
+    color: #5c5c5c;
+    font-size: 16px; /* Reduced font size for better readability on smaller screens */
+    font-weight: 500;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .loginsignup-container {
+        padding: 30px 20px; /* Further adjust padding for smaller screens */
+    }
+
+    .loginsignup-fields {
+        gap: 15px; /* Further reduced gap for smaller screens */
+    }
+
+    .loginsignup-container h1 {
+        font-size: 1.8rem; /* Adjust font size for better readability on tablets */
+    }
+
+    .loginsignup-fields input {
+        height: 45px; /* Adjust input height for tablets */
+        font-size: 15px; /* Adjust font size for tablets */
+    }
+
+    .loginsignup-container button {
+        height: 55px; /* Adjust button height for tablets */
+        font-size: 18px; /* Adjust font size for tablets */
+    }
+
+    .loginsignup-login {
+        font-size: 15px; /* Adjust font size for tablets */
+    }
+
+    .loginsignup-agree {
+        font-size: 15px; /* Adjust font size for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .loginsignup-container {
+        padding: 20px 10px; /* Further adjust padding for mobile devices */
+    }
+
+    .loginsignup-fields {
+        gap: 10px; /* Further reduced gap for mobile devices */
+    }
+
+    .loginsignup-container h1 {
+        font-size: 1.5rem; /* Adjust font size for better readability on mobile devices */
+    }
+
+    .loginsignup-fields input {
+        height: 40px; /* Adjust input height for mobile devices */
+        font-size: 14px; /* Adjust font size for mobile devices */
+    }
+
+    .loginsignup-container button {
+        height: 50px; /* Adjust button height for mobile devices */
+        font-size: 16px; /* Adjust font size for mobile devices */
+    }
+
+    .loginsignup-login {
+        font-size: 14px; /* Adjust font size for mobile devices */
+    }
+
+    .loginsignup-agree {
+        font-size: 14px; /* Adjust font size for mobile devices */
+    }
+}

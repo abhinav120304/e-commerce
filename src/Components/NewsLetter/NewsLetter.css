@@ -1,0 +1,127 @@
+.newsletter {
+    width: 90%; /* Adjusted width for smaller screens */
+    max-width: 65%; /* Added max-width for larger screens */
+    height: auto; /* Adjust height for flexibility */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 0px 20px; /* Reduced padding for smaller screens */
+    margin-bottom: 100px; /* Adjusted margin for smaller screens */
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+    gap: 20px; /* Adjusted gap for smaller screens */
+}
+
+.newsletter h1 {
+    color: #454545;
+    font-size: 32px; /* Reduced font size for smaller screens */
+    font-weight: 600;
+    text-align: center; /* Center text for better appearance */
+}
+
+.newsletter p {
+    color: #454545;
+    font-size: 16px; /* Reduced font size for smaller screens */
+    text-align: center; /* Center text for better appearance */
+}
+
+.newsletter div {
+    display: flex;
+    flex-direction: column; /* Column layout for smaller screens */
+    align-items: center;
+    width: 100%; /* Full width for smaller screens */
+    max-width: 730px; /* Limit maximum width */
+    height: auto; /* Adjust height for flexibility */
+    padding: 10px; /* Added padding for better spacing */
+    border-radius: 80px;
+    border: 1px solid #e3e3e3;
+    gap: 10px; /* Added gap between elements */
+}
+
+.newsletter input {
+    width: 90%; /* Full width for smaller screens */
+    margin: 0; /* Remove margin for smaller screens */
+    border: none;
+    outline: none;
+    color: #616161;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    padding: 10px; /* Added padding for better appearance */
+}
+
+.newsletter div button {
+    width: 100%; /* Full width for smaller screens */
+    max-width: 210px; /* Limit maximum width */
+    height: 50px; /* Adjust height for better appearance */
+    border-radius: 80px;
+    background: black;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Media queries for larger screens */
+@media (min-width: 768px) {
+    .newsletter {
+        width: 80%; /* Adjusted width for tablets */
+        padding: 0px 60px; /* Adjusted padding for tablets */
+    }
+
+    .newsletter h1 {
+        font-size: 45px; /* Adjusted font size for tablets */
+    }
+
+    .newsletter p {
+        font-size: 18px; /* Adjusted font size for tablets */
+    }
+
+    .newsletter div {
+        flex-direction: row; /* Row layout for tablets */
+        padding: 0px 20px; /* Adjusted padding for tablets */
+        gap: 0; /* Removed gap for better alignment */
+    }
+
+    .newsletter input {
+        width: 70%; /* Adjusted width for tablets */
+        margin-left: 20px; /* Adjusted margin for tablets */
+    }
+
+    .newsletter div button {
+        width: 30%; /* Adjusted width for tablets */
+        height: 70px; /* Adjusted height for tablets */
+    }
+}
+
+@media (min-width: 1024px) {
+    .newsletter {
+        width: 65%; /* Restore original width for larger screens */
+        padding: 0px 140px; /* Restore original padding for larger screens */
+        margin-bottom: 150px; /* Restore original margin for larger screens */
+    }
+
+    .newsletter h1 {
+        font-size: 55px; /* Restore original font size for larger screens */
+    }
+
+    .newsletter p {
+        font-size: 20px; /* Restore original font size for larger screens */
+    }
+
+    .newsletter div {
+        flex-direction: row; /* Restore original row layout */
+        width: 730px; /* Restore original width */
+        height: 70px; /* Restore original height */
+        padding: 0; /* Remove padding for larger screens */
+    }
+
+    .newsletter input {
+        width: 500px; /* Restore original width */
+        margin-left: 30px; /* Restore original margin */
+    }
+
+    .newsletter div button {
+        width: 210px; /* Restore original width */
+        height: 70px; /* Restore original height */
+    }
+}

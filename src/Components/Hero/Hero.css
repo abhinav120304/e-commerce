@@ -1,0 +1,111 @@
+.hero {
+    height: 100vh;
+    background: linear-gradient(180deg, #fde1ff, rgba(225, 255, 234, 0.13) 60%);
+    display: flex;
+    flex-direction: column; /* Default to column layout for small screens */
+}
+
+.hero-left, .hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center text on small screens */
+    padding: 20px; /* Added padding for small screens */
+}
+
+.hero-left {
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 20px; /* Reduced padding for small screens */
+    padding-right: 20px; /* Added padding for small screens */
+    line-height: 1.1;
+}
+
+.hero-left h2 {
+    color: #090909;
+    font-size: 20px; /* Further reduced font size for small screens */
+    font-weight: 600;
+}
+
+.hero-left p {
+    color: #171717;
+    font-size: 40px; /* Further reduced font size for small screens */
+    font-weight: 700;
+}
+
+.hero-hand-icon {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.hero-hand-icon img {
+    width: 50px; /* Further reduced image width for small screens */
+    height: auto;
+}
+
+.hero-latest-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 200px; /* Further reduced button width for small screens */
+    height: 50px; /* Further reduced button height for small screens */
+    border-radius: 50px;
+    margin-top: 20px;
+    background: #ff4141;
+    color: white;
+    font-size: 16px; /* Further reduced font size for small screens */
+    font-weight: 500;
+}
+
+.hero-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Added padding for small screens */
+}
+
+.hero-right img {
+    max-width: 80%; /* Reduce max-width for small screens */
+    max-height: 80%; /* Reduce max-height for small screens */
+    width: auto;
+    height: auto;
+}
+
+/* Media queries for larger screens */
+@media (min-width: 768px) {
+    .hero {
+        flex-direction: row;
+    }
+
+    .hero-left {
+        justify-content: center;
+        text-align: left; /* Align text to left for larger screens */
+        padding-left: 100px; /* Restoring original padding for larger screens */
+    }
+
+    .hero-left h2 {
+        font-size: 24px; /* Restoring original font size for larger screens */
+    }
+
+    .hero-left p {
+        font-size: 60px; /* Restoring original font size for larger screens */
+    }
+
+    .hero-hand-icon img {
+        width: 60px; /* Restoring original image width for larger screens */
+    }
+
+    .hero-latest-btn {
+        width: 250px; /* Restoring original button width for larger screens */
+        height: 60px; /* Restoring original button height for larger screens */
+        border-radius: 75px;
+    }
+
+    .hero-right img {
+        max-width: 100%; /* Restoring original max-width for larger screens */
+        max-height: 100%; /* Restoring original max-height for larger screens */
+    }
+}

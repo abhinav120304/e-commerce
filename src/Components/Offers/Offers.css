@@ -1,0 +1,111 @@
+.offers {
+    width: 90%; /* Adjusted width for smaller screens */
+    max-width: 70%; /* Added max-width for larger screens */
+    height: auto; /* Adjust height for flexibility */
+    display: flex;
+    flex-direction: column; /* Column layout for smaller screens */
+    align-items: center; /* Center items for smaller screens */
+    margin: auto;
+    padding: 20px; /* Reduced padding for smaller screens */
+    margin-bottom: 100px; /* Adjusted margin for smaller screens */
+    margin-top: 100px; /* Adjusted margin for smaller screens */
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+    gap: 20px; /* Added gap for smaller screens */
+    border-radius: 10px; /* Added rounded corners */
+}
+
+.offers-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center align items for smaller screens */
+    text-align: center; /* Center text for better appearance */
+}
+
+.offers-left h1 {
+    color: #171717;
+    font-size: 32px; /* Reduced font size for smaller screens */
+    font-weight: 600;
+}
+
+.offers-left p {
+    color: #171717;
+    font-size: 18px; /* Reduced font size for smaller screens */
+    font-weight: 600;
+}
+
+.offers-left button {
+    width: 100%; /* Full width for smaller screens */
+    max-width: 282px; /* Limit maximum width */
+    height: 50px; /* Adjust height for better appearance */
+    border-radius: 25px; /* Adjusted border radius for smaller screens */
+    background-color: #ff4141;
+    border: none;
+    color: white;
+    font-size: 18px; /* Reduced font size for smaller screens */
+    font-weight: 500;
+    margin-top: 20px; /* Reduced margin for smaller screens */
+    cursor: pointer;
+}
+
+.offers-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center items for smaller screens */
+    padding-top: 20px; /* Adjusted padding for smaller screens */
+}
+
+.offers-right img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ensures the image maintains its aspect ratio */
+}
+
+/* Media queries for larger screens */
+@media (min-width: 768px) {
+    .offers {
+        flex-direction: row; /* Row layout for tablets */
+        padding: 0px 60px; /* Adjusted padding for tablets */
+        margin-top: 200px; /* Adjusted margin for tablets */
+    }
+
+    .offers-left h1 {
+        font-size: 50px; /* Adjusted font size for tablets */
+    }
+
+    .offers-left p {
+        font-size: 20px; /* Adjusted font size for tablets */
+    }
+
+    .offers-left button {
+        height: 60px; /* Adjusted height for tablets */
+        font-size: 20px; /* Adjusted font size for tablets */
+    }
+}
+
+@media (min-width: 1024px) {
+    .offers {
+        width: 70%; /* Restore original width for larger screens */
+        padding: 0px 140px; /* Restore original padding for larger screens */
+        margin-bottom: 150px; /* Restore original margin for larger screens */
+        margin-top: 450px; /* Restore original margin for larger screens */
+    }
+
+    .offers-left h1 {
+        font-size: 60px; /* Restore original font size for larger screens */
+    }
+
+    .offers-left p {
+        font-size: 22px; /* Restore original font size for larger screens */
+    }
+
+    .offers-left button {
+        width: 282px; /* Restore original width */
+        height: 70px; /* Restore original height */
+        border-radius: 35px; /* Restore original border radius */
+        font-size: 22px; /* Restore original font size */
+        margin-top: 30px; /* Restore original margin */
+    }
+}
